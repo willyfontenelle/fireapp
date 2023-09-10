@@ -18,27 +18,39 @@
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(18,18,18, 0.38);
+    background-color: #262626;
     border-radius: 4px;
+    border: 1px solid;
+    border-color: #404040;
     margin-bottom: 12px;
     justify-content: center;
-    padding: 14px 8px;
+    padding: 16px 16px;
 }
 
 .list p{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .list button{
     margin-right: 8px;
-    border: 0;
+    border: 1px solid;
     border-radius: 4px;
     padding: 4px;
+    height: 28px;
 }
 
 .btn-delete{
-    color: #ffcc23;
-    background-color: transparent;
+    color: #77D998;
+    background-color: transparent!important;
+    border: 1px solid;
+    border-color: #fff;
+    width: 64px;
+}
+
+.btn-edit{
+    color: #ffd57f;
+    background-color: transparent!important;
+    width: 64px;
 }
 
 .btn-logout{
@@ -58,4 +70,26 @@
 .btn-logout:hover{
     background-color: rgba(219, 38, 41, 1);
     color: #fff;   
+}
+
+.btn-logout2{
+    height: 36px;
+    border: 1px solid;
+    border-color: #ff8a7f;
+    border-radius: 4px;
+    background-color: transparent!important;
+    color: #ff8a7f;
+    font-size: 18px;
+    width: 90%;
+    max-width: 600px;
+    transition: all 0.5s;
+}
+
+.btn-logout2:hover{
+    border-color: #ff4433;
+    color: #ff4433;
+}
+
+h1{
+    margin-bottom: 20px;
 }

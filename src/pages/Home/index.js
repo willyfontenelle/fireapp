@@ -38,9 +38,9 @@ export default function Home(){
 
 
   return(
+    
     <div className="home-container">
-      <h1>Lista de tarefas</h1>
-      <span>Gerencie sua agenda de forma fácil.</span>
+      <h1><img src="assets/logo.png" alt="Just do it." width="320px"/></h1>
 
       <form className="form" onSubmit={handleLogin}>
         <input

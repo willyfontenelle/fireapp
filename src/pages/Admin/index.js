@@ -114,7 +114,7 @@ export default function Admin() {
 
   return (
     <div className="admin-container">
-      <h1>Minhas tarefas</h1>
+      <h1><img src="assets/logo.png" alt="Just do it." width="200px"/></h1>
 
       <form className="form" onSubmit={handleRegister}>
         <textarea
@@ -124,7 +124,7 @@ export default function Admin() {
         />
 
         {Object.keys(edit).length > 0 ? (
-          <button className="btn-register" style={{ backgroundColor: '#6add39' }} type="submit">Atualizar tarefa</button>
+          <button className="btn-register" style={{ backgroundColor: '#ffbb33' }} type="submit">Atualizar tarefa</button>
         ) : (
           <button className="btn-register" type="submit">Registrar tarefa</button>
         )}
@@ -135,7 +135,7 @@ export default function Admin() {
           <p>{item.tarefa}</p>
 
           <div>
-            <button onClick={() => editTarefa(item)}>Editar</button>
+            <button onClick={() => editTarefa(item)} className="btn-edit">Editar</button>
             <button onClick={() => deleteTarefa(item.id)} className="btn-delete">Concluir</button>
           </div>
 
@@ -143,7 +143,7 @@ export default function Admin() {
 
       ))}
 
-      <button className="btn-logout" onClick={handleLogout}>Sair</button>
+      <button className="btn-logout2" onClick={handleLogout}>Sair</button>
 
     </div>
   )
